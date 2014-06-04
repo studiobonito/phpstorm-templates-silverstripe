@@ -47,7 +47,7 @@ For example `db` expands to:
  *
  * @var array
  */
-private static $has_many = array(
+private static $db = array(
     '' => ''
 );
 ```

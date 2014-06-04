@@ -56,7 +56,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="db" value="/**&#10; * List of database fields. {@link DataObject::$db}&#10; *&#10; * @var array&#10; */&#10;private static $has_many = array(&#10;    '$NAME$' =&gt; '$TYPE$'$END$&#10;);" description="$db" toReformat="true" toShortenFQNames="true">
+  <template name="db" value="/**&#10; * List of database fields. {@link DataObject::$db}&#10; *&#10; * @var array&#10; */&#10;private static $db = array(&#10;    '$NAME$' =&gt; '$TYPE$'$END$&#10;);" description="$db" toReformat="true" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
