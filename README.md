@@ -51,3 +51,21 @@ private static $db = array(
     '' => ''
 );
 ```
+
+And `cms` expands to:
+
+```php
+/**
+ * Returns a FieldList with which to create the main editing form. {@link DataObject::getCMSFields()}
+ *
+ * @return FieldList The fields to be displayed in the CMS.
+ */
+public function getCMSFields()
+{
+    $fields = parent::getCMSFields();
+
+
+
+    return $fields;
+}
+```
