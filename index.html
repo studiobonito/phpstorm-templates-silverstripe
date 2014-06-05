@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="PHPStorm Templates for SilverStripe : This is a collection of file and live templates used for speeding up SilverStripe development." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>PHPStorm Templates for SilverStripe</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/studiobonito/phpstorm-templates-silverstripe">View on GitHub</a>
+
+          <h1 id="project_title">PHPStorm Templates for SilverStripe</h1>
+          <h2 id="project_tagline">This is a collection of file and live templates used for speeding up SilverStripe development.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/studiobonito/phpstorm-templates-silverstripe/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/studiobonito/phpstorm-templates-silverstripe/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="phpstorm-templates-for-silverstripe" class="anchor" href="#phpstorm-templates-for-silverstripe"><span class="octicon octicon-link"></span></a>PHPStorm Templates for SilverStripe</h1>
+
+<h2>
+<a name="overview" class="anchor" href="#overview"><span class="octicon octicon-link"></span></a>Overview</h2>
+
+<p>This is a collection of file and live templates used for speeding up <a href="http://silverstripe.org/">SilverStripe</a> development.</p>
+
+<h2>
+<a name="installation-instructions" class="anchor" href="#installation-instructions"><span class="octicon octicon-link"></span></a>Installation Instructions</h2>
+
+<p>Place the files into the correct folders in your configuration path and restart PHPStorm.</p>
+
+<h3>
+<a name="linux" class="anchor" href="#linux"><span class="octicon octicon-link"></span></a>Linux</h3>
+
+<pre><code>~/.WebIdeXX/config
+</code></pre>
+
+<h3>
+<a name="os-x" class="anchor" href="#os-x"><span class="octicon octicon-link"></span></a>OS X</h3>
+
+<pre><code>~/Library/Preferences/WebIdeXX
+</code></pre>
+
+<h3>
+<a name="windows" class="anchor" href="#windows"><span class="octicon octicon-link"></span></a>Windows</h3>
+
+<pre><code>&lt;User home&gt;\.WebIdeXX/config
+</code></pre>
+
+<p><code>&lt;User home&gt;</code> in WindowsXP is <code>C:\Documents and Settings\&lt;User name&gt;\</code> and in Windows Vista it is <code>C:\Users\&lt;User name&gt;\</code></p>
+
+<h2>
+<a name="usage-overview" class="anchor" href="#usage-overview"><span class="octicon octicon-link"></span></a>Usage Overview</h2>
+
+<h3>
+<a name="file-templates" class="anchor" href="#file-templates"><span class="octicon octicon-link"></span></a>File Templates</h3>
+
+<p>Simply select the template you want to use when creating a new file.</p>
+
+<ul>
+<li>
+<code>SS Page</code>: Empty Page and Controller classes</li>
+<li>
+<code>SS Form</code>: Opinionated Form scaffold class</li>
+<li>
+<code>SS DataObject</code>: Empty DataObject class</li>
+<li>
+<code>SS DataExtension</code>: Empty DataExtension class</li>
+<li>
+<code>SS ModelAdmin</code>: ModelAdmin scaffold class</li>
+<li>
+<code>SS SapphireTest</code>: SapphireTest scaffold class</li>
+</ul><h3>
+<a name="live-templates" class="anchor" href="#live-templates"><span class="octicon octicon-link"></span></a>Live Templates</h3>
+
+<p>Tab complete abbreviations of common SilverStripe static properties and methods.</p>
+
+<p>For example <code>db</code> expands to:</p>
+
+<div class="highlight highlight-php"><pre><span class="sd">/**</span>
+<span class="sd"> * List of database fields. {@link DataObject::$db}</span>
+<span class="sd"> *</span>
+<span class="sd"> * @var array</span>
+<span class="sd"> */</span>
+<span class="k">private</span> <span class="k">static</span> <span class="nv">$db</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="s1">''</span> <span class="o">=&gt;</span> <span class="s1">''</span>
+<span class="p">);</span>
+</pre></div>
+
+<p>And <code>cms</code> expands to:</p>
+
+<div class="highlight highlight-php"><pre><span class="sd">/**</span>
+<span class="sd"> * Returns a FieldList with which to create the main editing form. {@link DataObject::getCMSFields()}</span>
+<span class="sd"> *</span>
+<span class="sd"> * @return FieldList The fields to be displayed in the CMS.</span>
+<span class="sd"> */</span>
+<span class="k">public</span> <span class="k">function</span> <span class="nf">getCMSFields</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="nv">$fields</span> <span class="o">=</span> <span class="k">parent</span><span class="o">::</span><span class="na">getCMSFields</span><span class="p">();</span>
+
+
+
+    <span class="k">return</span> <span class="nv">$fields</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">PHPStorm Templates for SilverStripe maintained by <a href="https://github.com/studiobonito">studiobonito</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
